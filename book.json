@@ -7,7 +7,7 @@
     "root": ".",
     "ignores": [
         "node_modules",
-        "book.json"
+        "_book"
     ],
     "links": {
         "sidebar": {
@@ -16,12 +16,14 @@
     },
     "plugins": [
         "-lunr",
-        "search",
+        "-search",
+        "search-plus",
         "katex",
         "simple-page-toc",
         "anchor-navigation-ex",
         "copy-code-button",
-        "expandable-chapters"
+        "tbfed-pagefooter",
+        "emphasize"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -41,6 +43,11 @@
             "tocLevel1Icon": "fa fa-hand-o-right",
             "tocLevel2Icon": "fa fa-hand-o-right",
             "tocLevel3Icon": "fa fa-hand-o-right"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy Xintao",
+            "modify_label": "修改时间: ",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
 }
