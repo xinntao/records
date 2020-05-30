@@ -1,9 +1,7 @@
 # gitbook使用
+<!-- toc -->
 
-### References:
-http://gitbook.zhangjikai.com/
 
-https://tonydeng.github.io/gitbook-zh/gitbook-howtouse/index.html
 
 ## 安装
 我是在Win10的wsl下安装使用的。
@@ -33,7 +31,7 @@ gitbook -V
 gitbook init
 ```
 它会生成<br>
-*README.md*]: 本书介绍<br>
+*README.md*: 本书介绍<br>
 *SUMMARY.md*: 定义本书目录
 
 2. 编辑
@@ -68,7 +66,7 @@ gitbook serve ./
 
 ## 其他需求
 
-1. 自动生成目录（SUMMARY.md）[Ref](http://self-publishing.ebookchain.org/index.html)
+1. 自动生成目录（SUMMARY.md）[Ref](http://self-publishing.ebookchain.org/index.html)<br>
 ```bash
 # install
 npm install -g gitbook-summary
@@ -84,4 +82,32 @@ book sm
     ]
     ```
 
-1. 生成当前页的目录
+1. 生成当前页的目录<br>
+使用插件: `simple-page-toc` [Ref](http://gitbook.zhangjikai.com/plugins.html#anchor-navigation-ex)
+```bash
+npm install gitbook-plugin-simple-page-toc
+```
+在需要生成目录的地方加上 &lt;!-- toc --&gt; .
+
+1. 添加Toc到侧边悬浮导航以及回到顶部按钮<br>
+使用插件: `anchor-navigation-ex` [Ref](http://gitbook.zhangjikai.com/plugins.html#anchor-navigation-ex)
+```bash
+npm install gitbook-plugin-anchor-navigation-ex
+```
+
+1. 为代码块添加复制的按钮<br>
+使用插件: `copy-code-button` [Ref](http://gitbook.zhangjikai.com/plugins.html#copy-code-button))
+```bash
+npm install gitbook-plugin-copy-code-button
+```
+
+1. 折叠目录<br>
+使用插件: `expandable-chapters`
+```bash
+npm install gitbook-plugin-expandable-chapters
+```
+
+### References
+http://gitbook.zhangjikai.com/
+
+https://tonydeng.github.io/gitbook-zh/gitbook-howtouse/index.html

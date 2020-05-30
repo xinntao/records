@@ -15,9 +15,13 @@
         }
     },
     "plugins": [
+        "-lunr",
         "search",
         "katex",
-        "simple-page-toc"
+        "simple-page-toc",
+        "anchor-navigation-ex",
+        "copy-code-button",
+        "expandable-chapters"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -26,6 +30,17 @@
         "simple-page-toc": {
             "maxDepth": 3,
             "skipFirstH1": true
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "associatedWithSummary": true,
+            "printLog": false,
+            "multipleH1": true,
+            "mode": "float",
+            "showGoTop": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
         }
     }
 }
