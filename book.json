@@ -1,0 +1,31 @@
+{
+    "title": "记录",
+    "description": "记录平时使用的软件等",
+    "author": "Xintao",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "ignores": [
+        "node_modules",
+        "book.json"
+    ],
+    "links": {
+        "sidebar": {
+            "Home": "https://xinntao.github.io/"
+        }
+    },
+    "plugins": [
+        "search",
+        "katex",
+        "simple-page-toc"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        }
+    }
+}
