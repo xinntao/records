@@ -140,6 +140,20 @@ This text is {\% em color="#ff0000" \%}highlighted with a custom color!{\% endem
 <span style="color:red;">红色字体</span>
 ```
 
+1. 添加TODO List<br>
+使用插件: `todo` [Ref](http://gitbook.zhangjikai.com/plugins.html#todo)
+```bash
+npm install gitbook-plugin-todo
+```
+- [ ] item 1
+- [x] item 2
+源码:
+
+```markdown
+- [ ] item 1
+- [x] item 2
+```
+
 ### References
 http://gitbook.zhangjikai.com/
 

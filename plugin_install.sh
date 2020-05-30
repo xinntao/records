@@ -5,3 +5,4 @@ npm install gitbook-plugin-tbfed-pagefooter
 npm install gitbook-plugin-search-plus
 npm install gitbook-plugin-emphasize
 npm install gitbook-plugin-katex
+npm install gitbook-plugin-todo

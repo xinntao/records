@@ -14,6 +14,13 @@
             "Home": "https://xinntao.github.io/"
         }
     },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/website.css",
+        "pdf": "styles/website.css",
+        "mobi": "styles/website.css",
+        "epub": "styles/website.css"
+    },
     "plugins": [
         "-lunr",
         "-search",
@@ -23,7 +30,8 @@
         "anchor-navigation-ex",
         "copy-code-button",
         "tbfed-pagefooter",
-        "emphasize"
+        "emphasize",
+        "todo"
     ],
     "pluginsConfig": {
         "theme-default": {
