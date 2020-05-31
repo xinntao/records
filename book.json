@@ -31,7 +31,10 @@
         "copy-code-button",
         "tbfed-pagefooter",
         "emphasize",
-        "todo"
+        "todo",
+        "-highlight",
+        "prism",
+        "custom-favicon"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -56,6 +59,12 @@
             "copyright": "Copyright &copy Xintao",
             "modify_label": "修改时间: ",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        }
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-vs.css"
+            ]
+        },
+        "favicon": "favicon.ico"
     }
 }

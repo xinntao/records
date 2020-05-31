@@ -6,3 +6,6 @@ npm install gitbook-plugin-search-plus
 npm install gitbook-plugin-emphasize
 npm install gitbook-plugin-katex
 npm install gitbook-plugin-todo
+npm install gitbook-plugin-prism
+npm install gitbook-plugin-prism-themes
+npm install gitbook-plugin-custom-favicon
