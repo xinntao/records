@@ -141,17 +141,6 @@ This text is {\% em color="#ff0000" \%}highlighted with a custom color!{\% endem
 <span style="color:red;">红色字体</span>
 ```
 
-1. **添加TODO List**<br>
-使用插件: `todo` [Ref](http://gitbook.zhangjikai.com/plugins.html#todo)
-```bash
-npm install gitbook-plugin-todo
-```
-源码:<br>
-`- [ ] item 1`<br>
-`- [x] item 2`
-- [ ] item 1
-- [x] item 2
-
 1. **代码高亮**<br>
 使用插件: `prism` [Ref](https://book.crifan.com/books/ebook_system_gitbook/website/gitbook_plugins/code_highlight.html)
 ```bash
@@ -165,6 +154,17 @@ npm install gitbook-plugin-prism-themes
 ```bash
 npm install gitbook-plugin-custom-favicon
 ```
+
+1. **添加TODO List**<br>
+使用插件: `todo` [Ref](http://gitbook.zhangjikai.com/plugins.html#todo)
+```bash
+npm install gitbook-plugin-todo
+```
+源码:<br>
+`- [ ] item 1`<br>
+`- [x] item 2`
+- [ ] item 1
+- [x] item 2
 
 ## References
 http://gitbook.zhangjikai.com/
