@@ -9,11 +9,11 @@
 一个本地仓库可以对应多个远程仓库。
 
 1. 将gitee加入远程仓库
-```bash
+```git
 git remote add gitee git@gitee.com:xinntao/records.git
 ```
 可以通过`git remote -v`查看远程仓库：
-```bash
+```git
 gitee   git@gitee.com:xinntao/records.git (fetch)
 gitee   git@gitee.com:xinntao/records.git (push)
 origin  git@github.com:xinntao/records.git (fetch)
@@ -22,7 +22,7 @@ origin  git@github.com:xinntao/records.git (push)
 可以看到本地仓库同时对应了github和gitee两个远程仓库。
 
 2. push
-```bash
+```git
 # push到origin: 对应github
 git push origin master
 # push到gitee
