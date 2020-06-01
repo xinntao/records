@@ -1,4 +1,6 @@
 # 码云gitee和github同时使用
+<!-- toc -->
+-----
 
 因为国内github速度很慢，所以想使用[码云gitee](https://gitee.com/)来做同步。但很多项目之前是放在github上的，所以希望能够在码云gitee和github之间同步起来。
 
@@ -28,3 +30,6 @@ git push origin master
 # push到gitee
 git push gitee master
 ```
+
+## 个人主页同时放GitHub和Gitee
+Gitee可以参考：https://gitee.com/help/articles/4136

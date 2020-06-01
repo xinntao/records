@@ -1,5 +1,6 @@
 # gitbook使用
 <!-- toc -->
+-----
 
 ## 安装
 我是在Win10的wsl下安装使用的。
@@ -167,6 +168,5 @@ npm install gitbook-plugin-todo
 - [x] item 2
 
 ## References
-http://gitbook.zhangjikai.com/
-
+http://gitbook.zhangjikai.com/ <br>
 https://tonydeng.github.io/gitbook-zh/gitbook-howtouse/index.html

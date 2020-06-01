@@ -1,6 +1,6 @@
 # 记录
 
-- [工具软件使用](工具软件使用/README.md)
+- 工具软件使用
   * [gitbook使用](工具软件使用/gitbook使用.md)
   * [git配置](工具软件使用/git配置.md)
   * [tmux使用](工具软件使用/tmux使用.md)

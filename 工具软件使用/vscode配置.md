@@ -1,5 +1,6 @@
 # VSCode配置
 <!-- toc -->
+-----
 
 ## 代码规范配置
 ### 代码格式和静态检查
@@ -84,5 +85,12 @@ coverage report -m
     - David Anson
 1. Python
     - Microsoft
+1. Git Graph
+    - mhutchie
+1. Live Server
+    - Ritwick Dey
+    - 点击右下角的`Go Live`, 就能运行一个server，能在浏览器中浏览网页
+    - 可以配置默认打开的根目录
 
 ## ssh服务器
+[TODO]
