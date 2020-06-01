@@ -1,0 +1,456 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>git配置 · 记录</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Xintao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tmux使用.html" />
+    
+    
+    <link rel="prev" href="gitbook使用.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://xinntao.gitee.io/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    工具软件使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gitbook使用.html">
+            
+                <a href="gitbook使用.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    gitbook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="git配置.html">
+            
+                <a href="git配置.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    git配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="tmux使用.html">
+            
+                <a href="tmux使用.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    tmux使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="vscode配置.html">
+            
+                <a href="vscode配置.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    vscode配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="zsh配置.html">
+            
+                <a href="zsh配置.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    zsh配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="码云gitee和github同时使用.html">
+            
+                <a href="码云gitee和github同时使用.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    码云gitee和github同时使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >git配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#git&#x914D;&#x7F6E;"><b></b>git&#x914D;&#x7F6E;</a></li><ul><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;glocal-setting"><b></b>&#x914D;&#x7F6E;glocal setting</a></li><ul><li><span class="title-icon "></span><a href="#git&#x547D;&#x4EE4;&#x7F29;&#x5199;"><b></b>git&#x547D;&#x4EE4;&#x7F29;&#x5199;</a></li></ul><li><span class="title-icon "></span><a href="#&#x751F;&#x6210;&#x516C;&#x94A5;"><b></b>&#x751F;&#x6210;&#x516C;&#x94A5;</a></li><ul><li><span class="title-icon "></span><a href="#github&#x751F;&#x6210;&#x516C;&#x94A5;"><b></b>github&#x751F;&#x6210;&#x516C;&#x94A5;</a></li><li><span class="title-icon "></span><a href="#gitlab&#x751F;&#x6210;&#x516C;&#x94A5;"><b></b>gitlab&#x751F;&#x6210;&#x516C;&#x94A5;</a></li></ul><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;cofing"><b></b>&#x914D;&#x7F6E;Cofing</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;"><b></b>&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#git-clone"><b></b>git clone</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x4E24;&#x4E2A;github&#x8D26;&#x6237;"><b></b>&#x914D;&#x7F6E;&#x4E24;&#x4E2A;github&#x8D26;&#x6237;</a></li></ul></ul></div><a href="#git&#x914D;&#x7F6E;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="git&#x914D;&#x7F6E;"><a name="git&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#git&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>git&#x914D;&#x7F6E;</h1>
+<p>&#x9700;&#x6C42;: &#x4E2A;&#x4EBA;&#x4EE3;&#x7801;&#x5728;github&#x4E0A;&#xFF0C;&#x516C;&#x53F8;&#x4EE3;&#x7801;&#x5728;gitlab&#x4E0A;&#x3002;&#x5728;&#x672C;&#x5730;&#x9700;&#x8981;<strong>&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x8D26;&#x53F7;</strong>&#x3002;&#x5173;&#x952E;&#x662F;&#x914D;&#x7F6E;&#x597D;&#x5404;&#x81EA;&#x7684;ssh&#x516C;&#x94A5;&#x548C;&#x8FDC;&#x7A0B;&#x5173;&#x8054;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;glocal-setting"><a name="&#x914D;&#x7F6E;glocal-setting" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;glocal-setting"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;glocal setting</h2>
+<p>&#x6839;&#x636E;&#x4F7F;&#x7528;&#x9891;&#x7387;&#xFF0C;&#x5728;github&#x4E0A;&#x4F7F;&#x7528;global git setting&#xFF0C;&#x5728;gitlab&#x4E0A;&#x4F7F;&#x7528;local&#x7684;git setting&#x3002;
+&#x53EF;&#x5728;&#x4EFB;&#x4F55;&#x76EE;&#x5F55;&#x4E0B;&#x914D;&#x7F6E;global setting&#x3002;</p>
+<pre class="language-"><code class="lang-git">git config --global user.name Xintao Wang
+git config --global user.email example@email.com
+</code></pre>
+<h3 id="git&#x547D;&#x4EE4;&#x7F29;&#x5199;"><a name="git&#x547D;&#x4EE4;&#x7F29;&#x5199;" class="anchor-navigation-ex-anchor" href="#git&#x547D;&#x4EE4;&#x7F29;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>git&#x547D;&#x4EE4;&#x7F29;&#x5199;</h3>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> config --global alias.st status
+<span class="token function">git</span> config --global alias.co checkout
+<span class="token function">git</span> config --global alias.ci commit
+<span class="token function">git</span> config --global alias.br branch
+
+<span class="token function">git</span> config --global alias.unstage <span class="token string">&apos;reset HEAD&apos;</span>    <span class="token comment"># &#x628A;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x64A4;&#x9500;&#x6389;&#xFF08;unstage&#xFF09;</span>
+<span class="token function">git</span> config --global alias.last <span class="token string">&apos;log -1&apos;</span>  <span class="token comment"># &#x663E;&#x793A;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;</span>
+<span class="token function">git</span> config --global alias.lg <span class="token string">&quot;log --color --graph --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&apos; --abbrev-commit&quot;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x53EA;&#x60F3;&#x5728;local&#x6587;&#x4EF6;&#x5939;&#x751F;&#x6548;&#xFF0C;&#x5219;&#x628A;<code>--global</code>&#x53BB;&#x6389;&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="&#x751F;&#x6210;&#x516C;&#x94A5;"><a name="&#x751F;&#x6210;&#x516C;&#x94A5;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;&#x516C;&#x94A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;&#x516C;&#x94A5;</h2>
+<h3 id="github&#x751F;&#x6210;&#x516C;&#x94A5;"><a name="github&#x751F;&#x6210;&#x516C;&#x94A5;" class="anchor-navigation-ex-anchor" href="#github&#x751F;&#x6210;&#x516C;&#x94A5;"><i class="fa fa-link" aria-hidden="true"></i></a>github&#x751F;&#x6210;&#x516C;&#x94A5;</h3>
+<pre class="language-"><code class="lang-bash">ssh-keygen -t rsa  -C example@email.com
+</code></pre>
+<p>&#x8FDE;&#x7EED;&#x56DE;&#x8F66;&#x5373;&#x53EF;&#xFF0C;&#x9ED8;&#x8BA4;&#x6587;&#x4EF6;&#x4E3A;&#xFF1A;<code>id_rsa.pub</code>. &#x628A; <code>id_rsa.pub</code> &#x5185;&#x5BB9;copy&#x5230;github&#x7684;setting SSH keys&#x9875;&#x9762;&#x5373;&#x53EF;.</p>
+<h3 id="gitlab&#x751F;&#x6210;&#x516C;&#x94A5;"><a name="gitlab&#x751F;&#x6210;&#x516C;&#x94A5;" class="anchor-navigation-ex-anchor" href="#gitlab&#x751F;&#x6210;&#x516C;&#x94A5;"><i class="fa fa-link" aria-hidden="true"></i></a>gitlab&#x751F;&#x6210;&#x516C;&#x94A5;</h3>
+<pre class="language-"><code class="lang-bash">ssh-keygen -t rsa  -C gitlab_example@email.com
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x7B2C;&#x4E00;&#x6B21;&#x751F;&#x6210;id_rsa&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF1A;<code>id_rsa_gitlab.pub</code>. <br>
+&#x628A; <code>id_rsa_gitlab.pub</code> &#x5185;&#x5BB9;copy&#x5230;gitlab&#x7684;setting SSH keys&#x9875;&#x9762;.</p>
+<h2 id="&#x914D;&#x7F6E;cofing"><a name="&#x914D;&#x7F6E;cofing" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;cofing"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;Cofing</h2>
+<p>&#x7528;&#x6765;&#x533A;&#x5206;git&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F80;&#x54EA;&#x4E2A;Host pull/push.</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">vi</span> config
+</code></pre>
+<p>&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;:</p>
+<pre class="language-"><code>Host github.com
+        HostName github.com
+        User example@email.com
+        IdentityFile ~/.ssh/id_rsa
+
+Host gitlab.xx.xxxxxxxxx.com
+        HostName gitlab.xx.xxxxxxxxx.com
+        User gitlab_example@email.com
+        IdentityFile ~/.ssh/id_rsa_gitlab
+</code></pre><p><code>.ssh/</code>&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>known_hosts</code>&#x4E3A;&#x514D;&#x5BC6;&#x767B;&#x5F55;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x5F53;&#x6210;&#x529F;&#x6DFB;&#x52A0;github&#x4E0E;gitlab&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x5E76;&#x5411;&#x8FDC;&#x7A0B;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x540E;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210;known_hosts&#x6587;&#x4EF6;.</p>
+<h2 id="&#x6D4B;&#x8BD5;"><a name="&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4B;&#x8BD5;</h2>
+<pre class="language-"><code class="lang-bash"><span class="token function">ssh</span> -T git@github.com
+<span class="token function">ssh</span> -T git@gitlab.xx.xxxxxxxxx.com
+</code></pre>
+<p>&#x4E00;&#x822C;&#x4F1A;&#x663E;&#x793A;&#xFF1A;Hi xinntao or Welcom to GitLab, @xinntao.</p>
+<h2 id="git-clone"><a name="git-clone" class="anchor-navigation-ex-anchor" href="#git-clone"><i class="fa fa-link" aria-hidden="true"></i></a>git clone</h2>
+<p>&#x4F7F;&#x7528;global setting&#x7684;&#x8D26;&#x53F7;&#x6765;git clone&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x4E0B;&#x9762;&#x4E3B;&#x8981;&#x8BF4;&#x4F7F;&#x7528;local setting&#x7684;&#x8D26;&#x53F7;&#x6765;git clone&#x3002;<br>
+<code>git clone git@gitlab.xx.xxxxxxxxx.com:yyy/zzz.git</code><br>
+&#x5B83;&#x662F;&#x6839;&#x636E;git@gitlab.xx.xxxxxxxxx.com Host&#x6765;&#x8BC6;&#x522B;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;SSH key&#x7684;</p>
+<p><strong>&#x4FEE;&#x6539;local git setting</strong>
+&#x8FDB;&#x5165;clone&#x4E0B;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x5939;, &#x4FEE;&#x6539;local git setting</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> config --local user.name wangxintao
+<span class="token function">git</span> config --local user.email gitlab_example@email.com
+</code></pre>
+<p>&#x68C0;&#x67E5; <code>.git/config</code>:</p>
+<pre class="language-"><code>[core]
+    repositoryformatversion = 0
+    filemode = false
+    bare = false
+    logallrefupdates = true
+    symlinks = false
+    ignorecase = true
+[remote &quot;origin&quot;]
+    url = git@gitlab.xx.xxxxxxxxx.com:yyy/zzz.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &quot;master&quot;]
+    remote = origin
+    merge = refs/heads/master
+[user]
+    name = wangxintao
+    email = gitlab_example@email.com
+[branch &quot;0.1.0&quot;]
+    remote = origin
+    merge = refs/heads/0.1.0
+</code></pre><h2 id="&#x914D;&#x7F6E;&#x4E24;&#x4E2A;github&#x8D26;&#x6237;"><a name="&#x914D;&#x7F6E;&#x4E24;&#x4E2A;github&#x8D26;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x4E24;&#x4E2A;github&#x8D26;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x4E24;&#x4E2A;github&#x8D26;&#x6237;</h2>
+<p>&#x539F;&#x7406;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x521B;&#x5EFA;&#x516C;&#x94A5;&#x7684;&#x65F6;&#x5019;&#x533A;&#x5206;&#x5F00;&#xFF0C;&#x7136;&#x540E;&#x5728;config&#x91CC;&#x9762;&#x5199;&#x660E;:</p>
+<pre class="language-"><code>Host github.com-xintao
+    HostName github.com
+User example_2@email.com
+IdentityFile ~/.ssh/id_rsa_work_xintao
+</code></pre><p>git clone&#x7684;&#x65F6;&#x5019;&#x6CE8;&#x610F;Host&#x7684;&#x540E;&#x7F00;</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> clone git@github.com-xintao:work_user1/repo_name.git
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Xintao all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x6539;&#x65F6;&#x95F4;: 
+2020-05-31 21:31:35
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gitbook使用.html" class="navigation navigation-prev " aria-label="Previous page: gitbook使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tmux使用.html" class="navigation navigation-next " aria-label="Next page: tmux使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"git配置","level":"1.2.2","depth":2,"next":{"title":"tmux使用","level":"1.2.3","depth":2,"path":"工具软件使用/tmux使用.md","ref":"工具软件使用/tmux使用.md","articles":[]},"previous":{"title":"gitbook使用","level":"1.2.1","depth":2,"path":"工具软件使用/gitbook使用.md","ref":"工具软件使用/gitbook使用.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","katex","simple-page-toc","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","emphasize","todo","-highlight","prism","custom-favicon","livereload"],"ignores":["node_modules","_book"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/website.css","pdf":"styles/website.css","mobi":"styles/website.css","epub":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Xintao","modify_label":"修改时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"emphasize":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":"favicon.ico","custom-favicon":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"Xintao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"记录","language":"zh-hans","links":{"sidebar":{"Home":"https://xinntao.gitee.io/"}},"gitbook":"3.2.3","description":"记录平时使用的软件等"},"file":{"path":"工具软件使用/git配置.md","mtime":"2020-05-31T13:31:35.534Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-31T09:47:01.142Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
