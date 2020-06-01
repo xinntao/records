@@ -65,6 +65,9 @@
                 "prism-themes/themes/prism-vs.css"
             ]
         },
-        "favicon": "favicon.ico"
+        "favicon": "favicon.ico",
+        "ga": {
+            "token": "UA-129775907-1"
+        }
     }
 }

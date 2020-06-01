@@ -156,6 +156,13 @@ npm install gitbook-plugin-prism-themes
 npm install gitbook-plugin-custom-favicon
 ```
 
+1. **使用Google统计**<br>
+使用插件: `ga` [Ref](http://gitbook.zhangjikai.com/plugins.html#ga)
+```bash
+npm install gitbook-plugin-ga
+```
+但最新的版本好像不支持，故没有使用。
+
 1. **添加TODO List**<br>
 使用插件: `todo` [Ref](http://gitbook.zhangjikai.com/plugins.html#todo)
 ```bash
