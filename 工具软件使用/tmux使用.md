@@ -9,6 +9,9 @@ setw -g mouse on  # 启用鼠标
 set-option -g allow-rename off  # 禁止修改window名字
 set -g history-limit 100000  # 设置显示历史，debug的时候可以看到更多信息
 
+# set scroll speed
+bind -Tcopy-mode WheelUpPane send -N1 -X scroll-up
+bind -Tcopy-mode WheelDownPane send -N1 -X scroll-down
 ```
 
 ## 常见命令
@@ -19,4 +22,11 @@ tmux new -s XT
 1. 修改prefix键
 ```bash
 set-option -g prefix C-a
+```
+
+## 其他问题
+1. 调节scroll速度, [Ref](https://stackoverflow.com/questions/36002866/configure-tmux-scroll-speed)
+```bash
+bind -Tcopy-mode WheelUpPane send -N1 -X scroll-up
+bind -Tcopy-mode WheelDownPane send -N1 -X scroll-down
 ```
