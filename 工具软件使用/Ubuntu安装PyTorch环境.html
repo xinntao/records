@@ -1,0 +1,499 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Ubuntu安装PyTorch环境 · 记录</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Xintao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vscode配置.html" />
+    
+    
+    <link rel="prev" href="tmux使用.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://xinntao.gitee.io/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    工具软件使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gitbook使用.html">
+            
+                <a href="gitbook使用.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    gitbook使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="git使用.html">
+            
+                <a href="git使用.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    git使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="git配置.html">
+            
+                <a href="git配置.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    git配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="tmux使用.html">
+            
+                <a href="tmux使用.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    tmux使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="Ubuntu安装PyTorch环境.html">
+            
+                <a href="Ubuntu安装PyTorch环境.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Ubuntu安装PyTorch环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="vscode配置.html">
+            
+                <a href="vscode配置.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    vscode配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="zsh配置.html">
+            
+                <a href="zsh配置.html">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    zsh配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="码云gitee和github同时使用.html">
+            
+                <a href="码云gitee和github同时使用.html">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    码云gitee和github同时使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Ubuntu安装PyTorch环境</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#binsh"><b></b>!/bin/sh</a></li><li><span class="title-icon "></span><a href="#option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath"><b></b>(option) export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/libnccl.so:$LD_LIBRARY_PATH</a></li><li><span class="title-icon "></span><a href="#you-can-find-the-nccl-path-by-find-usr--name-nccl"><b></b>you can find the nccl path by find /usr -name &apos;*nccl*&apos;</a></li><li><span class="title-icon "></span><a href="#binsh_1"><b></b>!/bin/sh</a></li></ul></div><a href="#binsh" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><ol>
+<li>Ubuntu&#x5B9E;&#x9A8C;&#x73AF;&#x5883;&#x914D;&#x7F6E; (PyTorch)
+Created : 2019/01/07; Updated : 2019/01/29;</li>
+</ol>
+<p>&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x7684;&#x6D41;&#x7A0B;&#x6765;&#x914D;&#x7F6E;Lab&#x673A;&#x5668;.</p>
+<p>1.1. &#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x547D;&#x4EE4;
+&#x67E5;&#x770B;Ubuntu&#x7248;&#x672C;: cat /etc/issue</p>
+<p>apt&#x66F4;&#x65B0;</p>
+<p>sudo apt-get update</p>
+<p>sudo apt-get upgrade</p>
+<p>sudo apt-get autoremove --purge</p>
+<p>&#x5176;&#x4ED6;apt&#x76F8;&#x5173;</p>
+<p>&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x7684; apt list --installed</p>
+<p>&#x641C;&#x7D22;&#x8F6F;&#x4EF6;&#x5217;&#x8868; apt-cache search nvidia</p>
+<p>1.2. tmux&#x5F00;&#x542F;&#x9F20;&#x6807;&#x952E;&#x76D8;&#x63A7;&#x5236;
+setw -g mouse on OR setw -g mode-mouse on</p>
+<p>1.3. &#x5B89;&#x88C5;Anaconda
+wget ...</p>
+<p>bash ..., &#x4E0D;&#x9700;&#x8981;sudo&#x6743;&#x9650;</p>
+<p>conda update --all</p>
+<p>1.4. &#x68C0;&#x67E5;Nvidia Driver
+&#x5173;&#x4E8E;cuda&#x4E0D;&#x540C;&#x7248;&#x672C;&#x5BF9;driver&#x6700;&#x4F4E;version&#x7684;&#x8981;&#x6C42;, &#x53C2;&#x89C1; nvidia doc - Table 1. CUDA 10.0.130 &gt;= 410.48</p>
+<p>&#x82E5;&#x9700;&#x8981;update driver:</p>
+<p>&#x901A;&#x8FC7; apt-get &#x5B89;&#x88C5;</p>
+<p>sudo add-apt-repository ppa:graphics-drivers/ppa + sudo apt-get update</p>
+<p>&#x641C;&#x7D22;&#x5217;&#x8868;, &#x67E5;&#x770B;&#x662F;&#x5426;&#x6709;&#x9700;&#x8981;&#x7684;&#x7248;&#x672C; apt-cache search nvidia</p>
+<p>&#x5B89;&#x88C5; sudo apt-get install nvidia-410</p>
+<p>&#x82E5;apt-get&#x5B89;&#x88C5;&#x5931;&#x8D25;, &#x53EF;&#x4EE5;&#x901A;&#x8FC7; cuda.run&#x6587;&#x4EF6;&#x81EA;&#x5E26;&#x7684;driver&#x5B89;&#x88C5;, &#x6CE8;&#x610F;&#x5728;&#x8FD9;&#x4E4B;&#x524D;&#x53EF;&#x80FD;&#x9700;&#x8981;</p>
+<p>&#x5378;&#x8F7D;&#x5DF2;&#x6709;&#x7684;cuda, apt list --installed, sudo apt-get --purge autoremove packagename</p>
+<p>&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7981;&#x7528;lightdm&#x670D;&#x52A1;, sudo service lightdm stop</p>
+<p>&#x82E5;&#x6709;&#x95EE;&#x9898;, &#x8BF7;&#x53C2;&#x8003;&#x6656;&#x54E5;&#x7684; &#x5B89;&#x88C5;&#x6307;&#x5357;</p>
+<p>&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;, &#x63D0;&#x9AD8;&#x6027;&#x80FD;. These commands can be added to /etc/rc.local for executing at system boot. (Lab&#x7684;&#x673A;&#x5668;&#x90FD;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;)</p>
+<p>sudo nvidia-smi -pm 1
+sudo nvidia-smi -e 0
+&#x786E;&#x8BA4;&#x662F;&#x5426;&#x6210;&#x529F; nvidia-smi.</p>
+<p>1.5. &#x5B89;&#x88C5;cuda 10.0
+&#x4E0B;&#x8F7D;.run&#x6587;&#x4EF6;&#x5B89;&#x88C5; sudo bash .run, &#x5217;&#x4E00;&#x4E9B;&#x9009;&#x9879;:</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Do you accept the previously read EULA?
+accept/decline/quit: accept
+Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 410.48?
+(y)es/(n)o/(q)uit: no
+Install the CUDA 10.0 Toolkit?
+(y)es/(n)o/(q)uit: yes
+Enter Toolkit Location
+[ default is /usr/local/cuda-10.0 ]:
+Do you want to install a symbolic link at /usr/local/cuda?
+(y)es/(n)o/(q)uit: no
+Install the CUDA 10.0 Samples?
+(y)es/(n)o/(q)uit: no
+&#x6CE8;&#x89E3;</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>&#x82E5;&#x6709;&#x8865;&#x4E01;, sudo bash cuda_9.1.85.1_linux.run. (&#x76EE;&#x524D;cuda10&#x8FD8;&#x6CA1;&#x6709;)</p>
+<p>1.6. &#x5B89;&#x88C5;cudnn
+cuda10&#x5BF9;&#x5E94;7.4.2, &#x5B89;&#x88C5;cudnn&#x53EA;&#x8981;copy&#x5373;&#x53EF;:</p>
+<p>sudo cp -r cuda/lib64/<em> /usr/local/cuda-10.0/lib64/
+sudo cp -r cuda/include/</em> /usr/local/cuda-10.0/include/
+1.7. &#x65B0;&#x5EFA;Anaconda&#x73AF;&#x5883; - pt1
+conda create -n pt1 python=3.7</p>
+<p>&#x4FEE;&#x6539;pt1&#x542F;&#x52A8;&#x73AF;&#x5883;:</p>
+<p>activate</p>
+<p>mkdir -p ~/anaconda3/envs/pt1/etc/conda/activate.d</p>
+<p>cd ~/anaconda3/envs/pt1/etc/conda/activate.d</p>
+<p>vim activate.sh</p>
+<p>&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;:</p>
+<h1 id="binsh"><a name="binsh" class="anchor-navigation-ex-anchor" href="#binsh"><i class="fa fa-link" aria-hidden="true"></i></a>!/bin/sh</h1>
+<p>ORIGINAL_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+ORIGINAL_PATH=$PATH
+ORIGINAL_CPATH=$CPATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:/usr/local/cuda-10.0/extras/CUPTI/lib64:/lib/nccl/cuda-10.0:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+export CPATH=/usr/local/cuda-10.0/include${CPATH:+:${CPATH}}</p>
+<h1 id="option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath"><a name="option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath" class="anchor-navigation-ex-anchor" href="#option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath"><i class="fa fa-link" aria-hidden="true"></i></a>(option) export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/libnccl.so:$LD_LIBRARY_PATH</h1>
+<h1 id="you-can-find-the-nccl-path-by-find-usr--name-nccl"><a name="you-can-find-the-nccl-path-by-find-usr--name-nccl" class="anchor-navigation-ex-anchor" href="#you-can-find-the-nccl-path-by-find-usr--name-nccl"><i class="fa fa-link" aria-hidden="true"></i></a>you can find the nccl path by <code>find /usr -name &apos;*nccl*&apos;</code></h1>
+<p>chmod +x activate.sh</p>
+<p>deactivate</p>
+<p>mkdir -p ~/anaconda3/envs/pt1/etc/conda/deactivate.d</p>
+<p>cd ~/anaconda3/envs/pt1/etc/conda/deactivate.d</p>
+<p>vim deactivate.sh</p>
+<h1 id="binsh_1"><a name="binsh_1" class="anchor-navigation-ex-anchor" href="#binsh_1"><i class="fa fa-link" aria-hidden="true"></i></a>!/bin/sh</h1>
+<p>export LD_LIBRARY_PATH=$ORIGINAL_LD_LIBRARY_PATH
+unset ORIGINAL_LD_LIBRARY_PATH
+export PATH=$ORIGINAL_PATH
+unset ORIGINAL_PATH
+export ORIGINAL_CPATH=$ORIGINAL_CPATH
+unset ORIGINAL_CPATH
+chmod +x deactivate.sh</p>
+<p>1.8. &#x5B89;&#x88C5;PyTorch
+&#x53C2;&#x89C1; &#x5B98;&#x7F51; &#x547D;&#x4EE4; (&#x8981;&#x786E;&#x5B9A;&#x5B89;&#x88C5;&#x7684;pytorch&#x7248;&#x672C;, &#x4EE5;&#x53CA;cuda&#x7248;&#x672C;), e.g. conda install pytorch torchvision cuda100 -c pytorch</p>
+<p>&#x9A8C;&#x8BC1;:</p>
+<p>python
+import torch
+print(torch.<strong>version</strong>)
+print(torch.version.cuda)
+print(torch.backends.cudnn.version())
+print(torch.cuda.is_available()) </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; Xintao all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x6539;&#x65F6;&#x95F4;: 
+2020-06-02 00:23:52
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tmux使用.html" class="navigation navigation-prev " aria-label="Previous page: tmux使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vscode配置.html" class="navigation navigation-next " aria-label="Next page: vscode配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Ubuntu安装PyTorch环境","level":"1.2.5","depth":2,"next":{"title":"vscode配置","level":"1.2.6","depth":2,"path":"工具软件使用/vscode配置.md","ref":"工具软件使用/vscode配置.md","articles":[]},"previous":{"title":"tmux使用","level":"1.2.4","depth":2,"path":"工具软件使用/tmux使用.md","ref":"工具软件使用/tmux使用.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","katex","simple-page-toc","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","emphasize","todo","-highlight","prism","custom-favicon","livereload"],"ignores":["node_modules","_book"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/website.css","pdf":"styles/website.css","mobi":"styles/website.css","epub":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Xintao","modify_label":"修改时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"emphasize":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":"favicon.ico","custom-favicon":{},"copy-code-button":{},"ga":{"token":"UA-129775907-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"Xintao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"记录","language":"zh-hans","links":{"sidebar":{"Home":"https://xinntao.gitee.io/"}},"gitbook":"3.2.3","description":"记录平时使用的软件等"},"file":{"path":"工具软件使用/Ubuntu安装PyTorch环境.md","mtime":"2020-06-01T16:23:52.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-25T03:03:13.480Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
