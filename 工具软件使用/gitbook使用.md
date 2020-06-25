@@ -55,7 +55,7 @@ gitbook init
 
 1. 预览
 ```bash
-gitbook serve ./
+gitbook --port 4000 serve ./
 ```
 可以在`http://localhost:4000/`实时预览
 
