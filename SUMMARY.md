@@ -4,6 +4,7 @@
   * [gitbook使用](工具软件使用/gitbook使用.md)
   * [git使用](工具软件使用/git使用.md)
   * [git配置](工具软件使用/git配置.md)
+  * [latex安装](工具软件使用/latex安装.md)
   * [tmux使用](工具软件使用/tmux使用.md)
   * [Ubuntu安装PyTorch环境](工具软件使用/Ubuntu安装PyTorch环境.md)
   * [vscode配置](工具软件使用/vscode配置.md)
