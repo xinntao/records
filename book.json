@@ -1,6 +1,6 @@
 {
     "title": "记录",
-    "description": "记录平时使用的软件等",
+    "description": "记录",
     "author": "Xintao",
     "language": "zh-hans",
     "gitbook": "3.2.3",
@@ -22,38 +22,46 @@
         "epub": "styles/website.css"
     },
     "plugins": [
+        "theme-hqbook",
+        "-sharing",
         "-lunr",
         "-search",
+        "-highlight",
         "search-plus",
         "katex",
-        "simple-page-toc",
-        "anchor-navigation-ex",
-        "copy-code-button",
         "tbfed-pagefooter",
-        "emphasize",
         "todo",
-        "-highlight",
         "prism",
-        "custom-favicon"
+        "custom-favicon",
+        "emphasize",
+        "editlink",
+        "pageview-count",
+        "flexible-alerts"
     ],
+    "variables": {
+        "themeHqbook": {
+            "nav": [
+                {
+                    "url": "https://xinntao.gitee.io/",
+                    "target": "_blank",
+                    "name": "Home"
+                },
+                {
+                    "url": "https://github.com/xinntao/gitbook-records",
+                    "target": "_blank",
+                    "name": "GitHub"
+                },
+                {
+                    "url": "https://gitee.com/xinntao/gitbook-records",
+                    "target": "_blank",
+                    "name": "Gitee码云"
+                }
+            ]
+        }
+    },
     "pluginsConfig": {
         "theme-default": {
             "showLevel": true
-        },
-        "simple-page-toc": {
-            "maxDepth": 3,
-            "skipFirstH1": true
-        },
-        "anchor-navigation-ex": {
-            "showLevel": false,
-            "associatedWithSummary": true,
-            "printLog": false,
-            "multipleH1": true,
-            "mode": "float",
-            "showGoTop": true,
-            "tocLevel1Icon": "fa fa-hand-o-right",
-            "tocLevel2Icon": "fa fa-hand-o-right",
-            "tocLevel3Icon": "fa fa-hand-o-right"
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright &copy Xintao",
@@ -62,12 +70,27 @@
         },
         "prism": {
             "css": [
-                "prism-themes/themes/prism-vs.css"
+                "prism-themes/themes/prism-shades-of-purple.css"
             ]
         },
         "favicon": "favicon.ico",
         "ga": {
             "token": "UA-129775907-1"
+        },
+        "editlink": {
+            "base": "https://github.com/xinntao/gitbook-records/blob/master/",
+            "label": "Edit This Page"
+        },
+        "theme-hqbook": {
+            "favicon": "../favicon.ico",
+            "logo": "../logo.png",
+            "search-placeholder": "输入关键字搜索",
+            "copyButtons": true,
+            "copyLines": true,
+            "dragSplitter": true,
+            "hide-elements": [
+                ".summary .gitbook-link"
+            ]
         }
     }
 }
