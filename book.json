@@ -10,9 +10,7 @@
         "_book"
     ],
     "links": {
-        "sidebar": {
-            "Home": "https://xinntao.gitee.io/"
-        }
+        "sidebar": {}
     },
     "styles": {
         "website": "styles/website.css",
@@ -53,7 +51,7 @@
                     "name": "GitHub"
                 },
                 {
-                    "url": "https://gitee.com/xinntao/gitbook-records",
+                    "url": "https://gitee.com/xinntao/records",
                     "target": "_blank",
                     "name": "Gitee码云"
                 }
@@ -78,7 +76,7 @@
             "token": "UA-129775907-1"
         },
         "editlink": {
-            "base": "https://gitee.com/xinntao/gitbook-records/blob/master/",
+            "base": "https://gitee.com/xinntao/records/blob/master/",
             "label": "Edit This Page"
         },
         "flexible-alerts": {
