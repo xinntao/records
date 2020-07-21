@@ -62,7 +62,7 @@
     },
     "pluginsConfig": {
         "theme-default": {
-            "showLevel": true
+            "showLevel": false
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright &copy Xintao",
@@ -78,8 +78,16 @@
             "token": "UA-129775907-1"
         },
         "editlink": {
-            "base": "https://github.com/xinntao/gitbook-records/blob/master/",
+            "base": "https://gitee.com/xinntao/gitbook-records/blob/master/",
             "label": "Edit This Page"
+        },
+        "flexible-alerts": {
+            "style": "flat",
+            "comment": {
+                "label": "Comment",
+                "icon": "fa fa-comments",
+                "className": "info"
+            }
         },
         "theme-coolx": {
             "favicon": "favicon.png",
