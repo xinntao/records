@@ -269,7 +269,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
   }
 
   gitbook.events.on('start', function (e, config) {
-    pluginConfig = config['theme-hqbook'];
+    pluginConfig = config['theme-coolx'];
     opts = pluginConfig["hide-elements"];
 
     if (pluginConfig.copyButtons) {
