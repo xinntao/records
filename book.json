@@ -32,7 +32,6 @@
         "tbfed-pagefooter",
         "todo",
         "prism",
-        "custom-favicon",
         "emphasize",
         "editlink",
         "pageview-count",
@@ -73,7 +72,6 @@
                 "prism-themes/themes/prism-shades-of-purple.css"
             ]
         },
-        "favicon": "favicon.ico",
         "ga": {
             "token": "UA-129775907-1"
         },
@@ -82,7 +80,7 @@
             "label": "Edit This Page"
         },
         "theme-hqbook": {
-            "favicon": "../favicon.ico",
+            "favicon": "favicon.png",
             "logo": "../logo.png",
             "search-placeholder": "输入关键字搜索",
             "copyButtons": true,
