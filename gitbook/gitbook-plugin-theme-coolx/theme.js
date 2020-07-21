@@ -286,7 +286,10 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
     }
     else {
       document.getElementById("my-book-anchor").style.width = "0px";
-      document.getElementById("my-page-inner").style.paddingRight = "0px";
+      document.getElementById("my-book-anchor").style.padding = "0px 0px 0px 0px";
+      document.getElementById("my-book-anchor").style.borderLeft = "0px";
+      document.getElementById("my-page-inner").style.paddingLeft = "10px";
+      document.getElementById("my-page-inner").style.paddingRight = "10px";
     }
 
     $('pre').each(function () {
