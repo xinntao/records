@@ -40,7 +40,7 @@
         "theme-coolx@git+https://github.com/xinntao/gitbook-plugin-theme-coolx"
     ],
     "variables": {
-        "themeHCoolX": {
+        "themeCoolX": {
             "nav": [
                 {
                     "url": "https://xinntao.gitee.io/",
