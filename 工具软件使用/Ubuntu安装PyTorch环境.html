@@ -25,11 +25,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-shades-of-purple.css">
                 
             
                 
@@ -37,11 +37,19 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-hqbook/theme.css">
                 
             
         
@@ -83,16 +91,38 @@
     <body>
         
 <div class="book">
-    <div class="book-summary">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="" alt="logo">
+        </div>
+        <span class="title"></span>
+
+        <!-- Search -->
         
-            
 <div id="book-search-input" role="search">
     <input type="text" placeholder="输入并搜索" />
 </div>
 
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            <li>
+                <a href="https://xinntao.gitee.io/" target="_blank">Home</a>
+            </li><li>
+                <a href="https://github.com/xinntao/gitbook-records" target="_blank">GitHub</a>
+            </li><li>
+                <a href="https://gitee.com/xinntao/gitbook-records" target="_blank">Gitee码云</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <!--<div class="book-summary-title">文档目录</div>-->
+        
+        
+        <nav role="navigation">
             
-                <nav role="navigation">
-                
 
 
 <ul class="summary">
@@ -298,16 +328,24 @@
 </ul>
 
 
-                </nav>
-            
+        </nav>
         
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <!--<div class="book-anchor-title">在这篇文章中:</div>-->
+        <div class="book-anchor-body">
+
+        </div>
     </div>
 
     <div class="book-body">
         
-            <div class="body-inner">
-                
-                    
+        <div class="body-inner">
+            
+            
 
 <div class="book-header" role="navigation">
     
@@ -322,15 +360,15 @@
 
 
 
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
 <div class="search-plus" id="book-search-results">
     <div class="search-noresults">
     
-                                <section class="normal markdown-section">
-                                
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#binsh"><b></b>!/bin/sh</a></li><li><span class="title-icon "></span><a href="#option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath"><b></b>(option) export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/libnccl.so:$LD_LIBRARY_PATH</a></li><li><span class="title-icon "></span><a href="#you-can-find-the-nccl-path-by-find-usr--name-nccl"><b></b>you can find the nccl path by find /usr -name &apos;*nccl*&apos;</a></li><li><span class="title-icon "></span><a href="#binsh_1"><b></b>!/bin/sh</a></li></ul></div><a href="#binsh" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><ol>
+                    <section class="normal markdown-section">
+                        
+                        <ol>
 <li>Ubuntu&#x5B9E;&#x9A8C;&#x73AF;&#x5883;&#x914D;&#x7F6E; (PyTorch)
 Created : 2019/01/07; Updated : 2019/01/29;</li>
 </ol>
@@ -399,21 +437,21 @@ conda create -n pt1 python=3.7</p>
 <p>cd ~/anaconda3/envs/pt1/etc/conda/activate.d</p>
 <p>vim activate.sh</p>
 <p>&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;:</p>
-<h1 id="binsh"><a name="binsh" class="anchor-navigation-ex-anchor" href="#binsh"><i class="fa fa-link" aria-hidden="true"></i></a>!/bin/sh</h1>
+<h1 id="binsh">!/bin/sh</h1>
 <p>ORIGINAL_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
 ORIGINAL_PATH=$PATH
 ORIGINAL_CPATH=$CPATH
 export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:/usr/local/cuda-10.0/extras/CUPTI/lib64:/lib/nccl/cuda-10.0:$LD_LIBRARY_PATH
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 export CPATH=/usr/local/cuda-10.0/include${CPATH:+:${CPATH}}</p>
-<h1 id="option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath"><a name="option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath" class="anchor-navigation-ex-anchor" href="#option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath"><i class="fa fa-link" aria-hidden="true"></i></a>(option) export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/libnccl.so:$LD_LIBRARY_PATH</h1>
-<h1 id="you-can-find-the-nccl-path-by-find-usr--name-nccl"><a name="you-can-find-the-nccl-path-by-find-usr--name-nccl" class="anchor-navigation-ex-anchor" href="#you-can-find-the-nccl-path-by-find-usr--name-nccl"><i class="fa fa-link" aria-hidden="true"></i></a>you can find the nccl path by <code>find /usr -name &apos;*nccl*&apos;</code></h1>
+<h1 id="option-export-ldlibrarypathusrlibx8664-linux-gnulibncclsoldlibrarypath">(option) export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/libnccl.so:$LD_LIBRARY_PATH</h1>
+<h1 id="you-can-find-the-nccl-path-by-find-usr--name-nccl">you can find the nccl path by <code>find /usr -name &apos;*nccl*&apos;</code></h1>
 <p>chmod +x activate.sh</p>
 <p>deactivate</p>
 <p>mkdir -p ~/anaconda3/envs/pt1/etc/conda/deactivate.d</p>
 <p>cd ~/anaconda3/envs/pt1/etc/conda/deactivate.d</p>
 <p>vim deactivate.sh</p>
-<h1 id="binsh_1"><a name="binsh_1" class="anchor-navigation-ex-anchor" href="#binsh_1"><i class="fa fa-link" aria-hidden="true"></i></a>!/bin/sh</h1>
+<h1 id="binsh">!/bin/sh</h1>
 <p>export LD_LIBRARY_PATH=$ORIGINAL_LD_LIBRARY_PATH
 unset ORIGINAL_LD_LIBRARY_PATH
 export PATH=$ORIGINAL_PATH
@@ -433,9 +471,9 @@ print(torch.cuda.is_available()) </p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; Xintao all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x6539;&#x65F6;&#x95F4;: 
 2020-06-02 00:23:52
 </span></footer>
-                                
-                                </section>
-                            
+                        
+                    </section>
+                    
     </div>
     <div class="search-results">
         <div class="has-results">
@@ -452,30 +490,33 @@ print(torch.cuda.is_available()) </p>
     </div>
 </div>
 
-                        </div>
-                    </div>
-                
+                </div>
             </div>
+            
+        </div>
 
-            
-                
-                <a href="tmux使用.html" class="navigation navigation-prev " aria-label="Previous page: tmux使用">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="vscode配置.html" class="navigation navigation-next " aria-label="Next page: vscode配置">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+        
+        
+        <a href="tmux使用.html"
+           class="navigation navigation-prev "
+           aria-label="Previous page: tmux使用">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="vscode配置.html"
+           class="navigation navigation-next "
+           aria-label="Next page: vscode配置">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
         
     </div>
-
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ubuntu安装PyTorch环境","level":"1.2.6","depth":2,"next":{"title":"vscode配置","level":"1.2.7","depth":2,"path":"工具软件使用/vscode配置.md","ref":"工具软件使用/vscode配置.md","articles":[]},"previous":{"title":"tmux使用","level":"1.2.5","depth":2,"path":"工具软件使用/tmux使用.md","ref":"工具软件使用/tmux使用.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","katex","simple-page-toc","anchor-navigation-ex","copy-code-button","tbfed-pagefooter","emphasize","todo","-highlight","prism","custom-favicon","livereload"],"ignores":["node_modules","_book"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/website.css","pdf":"styles/website.css","mobi":"styles/website.css","epub":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Xintao","modify_label":"修改时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"emphasize":{},"livereload":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"mode":"float","pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"favicon":"favicon.ico","custom-favicon":{},"copy-code-button":{},"ga":{"token":"UA-129775907-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"Xintao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"记录","language":"zh-hans","links":{"sidebar":{"Home":"https://xinntao.gitee.io/"}},"gitbook":"3.2.3","description":"记录平时使用的软件等"},"file":{"path":"工具软件使用/Ubuntu安装PyTorch环境.md","mtime":"2020-06-01T16:23:52.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-25T03:03:13.480Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ubuntu安装PyTorch环境","level":"1.2.6","depth":2,"next":{"title":"vscode配置","level":"1.2.7","depth":2,"path":"工具软件使用/vscode配置.md","ref":"工具软件使用/vscode配置.md","articles":[]},"previous":{"title":"tmux使用","level":"1.2.5","depth":2,"path":"工具软件使用/tmux使用.md","ref":"工具软件使用/tmux使用.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-hqbook","-sharing","-lunr","-search","-highlight","search-plus","katex","tbfed-pagefooter","todo","prism","emphasize","editlink","pageview-count","flexible-alerts"],"ignores":["node_modules","_book"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/website.css","pdf":"styles/website.css","mobi":"styles/website.css","epub":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Xintao","modify_label":"修改时间: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-shades-of-purple.css"]},"emphasize":{},"editlink":{"label":"Edit This Page","multilingual":false,"base":"https://github.com/xinntao/gitbook-records/blob/master/"},"todo":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"theme-hqbook":{"copyButtons":true,"copyLines":true,"dragSplitter":true,"favicon":"favicon.png","logo":"../logo.png","search-placeholder":"输入关键字搜索","hide-elements":[".summary .gitbook-link"]},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"token":"UA-129775907-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"Xintao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeHqbook":{"nav":[{"url":"https://xinntao.gitee.io/","target":"_blank","name":"Home"},{"url":"https://github.com/xinntao/gitbook-records","target":"_blank","name":"GitHub"},{"url":"https://gitee.com/xinntao/gitbook-records","target":"_blank","name":"Gitee码云"}]}},"title":"记录","language":"zh-hans","links":{"sidebar":{"Home":"https://xinntao.gitee.io/"}},"gitbook":"3.2.3","description":"记录"},"file":{"path":"工具软件使用/Ubuntu安装PyTorch环境.md","mtime":"2020-06-01T16:23:52.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-21T04:02:02.772Z"},"basePath":"..","book":{"language":""}})
         });
     </script>
 </div>
@@ -493,19 +534,23 @@ print(torch.cuda.is_available()) </p>
         
     
         
-        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
         
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-hqbook/theme.js"></script>
         
     
 
