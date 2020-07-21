@@ -22,7 +22,6 @@
         "epub": "styles/website.css"
     },
     "plugins": [
-        "theme-hqbook",
         "-sharing",
         "-lunr",
         "-search",
@@ -37,10 +36,11 @@
         "pageview-count",
         "flexible-alerts",
         "expandable-chapters",
-        "chapter-fold"
+        "chapter-fold",
+        "theme-coolx@git+https://github.com/xinntao/gitbook-plugin-theme-coolx"
     ],
     "variables": {
-        "themeHqbook": {
+        "themeHCoolX": {
             "nav": [
                 {
                     "url": "https://xinntao.gitee.io/",
@@ -81,7 +81,7 @@
             "base": "https://github.com/xinntao/gitbook-records/blob/master/",
             "label": "Edit This Page"
         },
-        "theme-hqbook": {
+        "theme-coolx": {
             "favicon": "favicon.png",
             "logo": "logo.png",
             "search-placeholder": "输入关键字搜索",
