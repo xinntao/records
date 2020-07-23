@@ -20,30 +20,34 @@
         "epub": "styles/website.css"
     },
     "plugins": [
+        "theme-coolx@git+https://github.com/xinntao/gitbook-plugin-theme-coolx",
         "-sharing",
         "-lunr",
         "-search",
         "-highlight",
-        "search-plus",
-        "katex",
-        "tbfed-pagefooter",
-        "todo",
-        "prism",
-        "emphasize",
-        "editlink",
-        "pageview-count",
-        "flexible-alerts",
         "expandable-chapters",
         "chapter-fold",
-        "theme-coolx@git+https://github.com/xinntao/gitbook-plugin-theme-coolx"
+        "tbfed-pagefooter",
+        "search-plus",
+        "katex",
+        "emphasize",
+        "prism",
+        "todo",
+        "editlink",
+        "flexible-alerts"
     ],
     "variables": {
         "themeCoolX": {
             "nav": [
                 {
+                    "url": "https://xinntao.github.io/",
+                    "target": "_blank",
+                    "name": "Home (host on github)"
+                },
+                {
                     "url": "https://xinntao.gitee.io/",
                     "target": "_blank",
-                    "name": "Home"
+                    "name": "Home (host on gitee)"
                 },
                 {
                     "url": "https://github.com/xinntao/gitbook-records",
@@ -71,9 +75,6 @@
             "css": [
                 "prism-themes/themes/prism-shades-of-purple.css"
             ]
-        },
-        "ga": {
-            "token": "UA-129775907-1"
         },
         "editlink": {
             "base": "https://gitee.com/xinntao/records/blob/master/",
