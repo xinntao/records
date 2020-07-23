@@ -9,6 +9,6 @@
   * [vscode配置](工具软件使用/vscode配置.md)
   * [git配置](工具软件使用/git配置.md)
   * [git使用](工具软件使用/git使用.md)
-  * [码云gitee和github同时使用](工具软件使用/码云gitee和github同时使用.md)
-  * [latex安装](工具软件使用/latex安装.md)
+  * [Latex安装](工具软件使用/Latex安装.md)
   * [gitbook使用](工具软件使用/gitbook使用.md)
+  * [Ubuntu安装MATLAB](工具软件使用/Ubuntu安装MATLAB.md)

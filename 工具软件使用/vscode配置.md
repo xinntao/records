@@ -93,4 +93,37 @@ coverage report -m
     - 可以配置默认打开的根目录
 
 ## ssh服务器
-[TODO]
+
+1. 安装`Remote-SSH`插件
+1. 点击左侧的远程连接图标(Remote Explorer), 左侧边栏右上角选择`SSH TARGETS`, 点击齿轮图标设置
+1. 编辑弹出的`~/.ssh/config`
+    1. 有跳板机
+    ```bash
+    Host jump_machine  # arbitrary host name
+        HostName jump.xx.xxxxxxxxx.com  # url or ip address
+        User xtwang  # user name
+        ForwardAgent yes
+
+    Host remote_machine  # arbitray name
+        HostName 172.20.20.2  # url or ip address
+        User xtwang
+        ProxyCommand C:\Windows\System32\OpenSSH\ssh.exe -q -W %h:%p jump_machine  # windows 下要写整个ssh的路径; # jump_machine为上一个entry的name
+    ```
+    1. 直连
+    ```bash
+    Host arbitrary_name  # arbitray name
+        HostName xxxxx.xx.xxxx.xxx.xx  # url or ip address
+        User xtwang
+        ForwardAgent yes
+        Port 2190
+    ```
+
+    {% reveal text="<font color=#ffffff>+</font>" %}
+    Host cdc190
+        HostName cdcgw.ie.cuhk.edu.hk
+        User xtwang
+        ForwardAgent yes
+        Port 2190
+    {% endreveal %}
+
+1. 将本地ssh公钥(~/.ssh/id_rsa.pub内容)加到服务器的authorized_keys(~/.ssh/authorized_keys)里.

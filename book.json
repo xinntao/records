@@ -34,12 +34,12 @@
         "prism",
         "todo",
         "editlink",
-        "flexible-alerts"
+        "flexible-alerts",
+        "click-reveal@git+https://github.com/xinntao/gitbook-plugin-click-reveal"
     ],
     "variables": {
         "themeCoolX": {
-            "nav": [
-                {
+            "nav": [{
                     "url": "https://xinntao.github.io/",
                     "target": "_blank",
                     "name": "Home (host on github)"

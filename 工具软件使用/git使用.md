@@ -66,8 +66,52 @@ jobs:
 1. [git-mirror-action](https://github.com/wearerequired/git-mirror-action)
 2. [巧用Github Action同步代码到Gitee](http://yikun.github.io/2020/01/17/%E5%B7%A7%E7%94%A8Github-Action%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%88%B0Gitee/)
 
+## 码云gitee和github手动互相同步
+因为国内github速度很慢，所以想使用[码云gitee](https://gitee.com/)来做同步。但很多项目之前是放在github上的，所以希望能够在码云gitee和github之间同步起来。
+
+### 从github同步项目
+这步骤很简单，gitee支持从github项目直接导入
+
+### local代码同时push到github和gitee
+一个本地仓库可以对应多个远程仓库。
+
+1. 将gitee加入远程仓库
+```git
+git remote add gitee git@gitee.com:xinntao/records.git
+```
+可以通过`git remote -v`查看远程仓库：
+```git
+gitee   git@gitee.com:xinntao/records.git (fetch)
+gitee   git@gitee.com:xinntao/records.git (push)
+origin  git@github.com:xinntao/records.git (fetch)
+origin  git@github.com:xinntao/records.git (push)
+```
+可以看到本地仓库同时对应了github和gitee两个远程仓库。
+
+2. push
+```git
+# push到origin: 对应github
+git push origin master
+# push到gitee
+git push gitee master
+```
+
+> [!TIP|label: 一次push到github和gitee]
+> 添加新的远程仓库地址: 在.git的config, 添加URL, 比如:
+> ```
+> [remote "origin"]
+>   url = git@github.com:xinntao/BasicSR.git
+>   fetch = +refs/heads/*:refs/remotes/origin/*
+>   url = git@gitee.com:xinntao/BasicSR.git
+> ```
+
+这个解决方法有一个问题: 国内网不好, push到github的部分就卡住了=-=
+
+### 个人主页同时放GitHub和Gitee
+Gitee可以参考：https://gitee.com/help/articles/4136
+
 ## Github Public和Private同步
-需求: 我有一个`BasicSR`的public repo, 同时，自己的private的开发是放在`BasicSR-private`repo的。希望定期可以从public的`BasicSR` repo pull.
+需求: 我有一个`BasicSR`的public repo, 同时，自己的private的开发是放在`BasicSR-private`repo的。希望定期(手动)可以从public的`BasicSR` repo pull.
 
 1. 在`BasicSR-private`中把public加入
 ```git

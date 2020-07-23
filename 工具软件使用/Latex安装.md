@@ -1,9 +1,8 @@
-# latex安装
+# Latex安装
 <!-- toc -->
 -----
 
-## TeXstudio
-### Windows安装
+## Windows安装TeXstudio
 
 1. 安装TeX Live.
 在 https://www.tug.org/texlive/acquire-netinstall.html 下载安装包`install-tl-windows.exe`. <br>
@@ -12,7 +11,7 @@
 
 2. 安装TeXstudio.
 下载安装 https://www.texstudio.org/ <br>
-Windows安装了texlive, texstudio 还是提示找不到texlive，那么需要在环境变量中添加路径，比如C:\texlive\2020\bin\win32
+Windows安装了texlive, texstudio 还是提示找不到texlive，那么需要在环境变量中添加路径，比如`C:\texlive\2020\bin\win32`
 
 3. 设置字典.
 最新版有自带的字典, configuration里面的speeling选择应用的就行.

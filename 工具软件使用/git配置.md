@@ -40,21 +40,18 @@ ssh-keygen -t rsa  -C gitlab_example@email.com
 把 `id_rsa_gitlab.pub` 内容copy到gitlab的setting SSH keys页面.
 
 ## 配置Cofing
-用来区分git的时候，往哪个Host pull/push.
-```bash
-vi config
-```
-写入以下内容:
+用来区分git的时候，往哪个Host pull/push. <br>
+在`.ssh/config`写入以下内容:
 ```
 Host github.com
-        HostName github.com
-        User example@email.com
-        IdentityFile ~/.ssh/id_rsa
+	HostName github.com
+	User example@email.com
+	IdentityFile ~/.ssh/id_rsa
 
 Host gitlab.xx.xxxxxxxxx.com
-        HostName gitlab.xx.xxxxxxxxx.com
-        User gitlab_example@email.com
-        IdentityFile ~/.ssh/id_rsa_gitlab
+	HostName gitlab.xx.xxxxxxxxx.com
+	User gitlab_example@email.com
+	IdentityFile ~/.ssh/id_rsa_gitlab
 ```
 
 `.ssh/`目录下的`known_hosts`为免密登录用户信息，当成功添加github与gitlab的公钥，并向远程建立连接后，会自动生成known_hosts文件.
@@ -106,8 +103,8 @@ git config --local user.email gitlab_example@email.com
 ```
 Host github.com-xintao
 	HostName github.com
-User example_2@email.com
-IdentityFile ~/.ssh/id_rsa_work_xintao
+	User example_2@email.com
+	IdentityFile ~/.ssh/id_rsa_work_xintao
 ```
 git clone的时候注意Host的后缀
 ```bash
