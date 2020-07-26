@@ -29,6 +29,7 @@
 >     |--- records
 >     |--- records-gh-pages
 >     ```
+>     Note that in order to trigger the GitHub actions, we should also copy the `.github` folder to the records-gh-pages branch for the fist time.
 > 1. Update the master branch in the `records` folder.
 > 1. Build the gitbook: `gitbook build`
 > 1. In the `records` repo, copy the contents in `_book` folder to `records-gh-pages`: `cp -r _book/* ../records-gh-pages`
