@@ -50,7 +50,7 @@
                     "name": "Home (host on gitee)"
                 },
                 {
-                    "url": "https://github.com/xinntao/gitbook-records",
+                    "url": "https://github.com/xinntao/records",
                     "target": "_blank",
                     "name": "GitHub"
                 },
@@ -73,7 +73,7 @@
         },
         "prism": {
             "css": [
-                "prism-themes/themes/prism-shades-of-purple.css"
+                "gitbook-plugin-theme-coolx/_themes/prism-shades-of-purple.css"
             ]
         },
         "editlink": {
