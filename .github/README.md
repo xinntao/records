@@ -3,6 +3,10 @@
 [Page hosted on GitHub](https://xinntao.github.io/records/) | [Page hosted on Gitee码云](https://xinntao.gitee.io/records/) <br>
 [GitHub](https://github.com/xinntao/records) | [Gitee码云](https://gitee.com/xinntao/records)
 
+## Note
+- Github pages will automatically update the contents in `gh-pages`.
+- Gitee pages **require manual** updates.
+
 ## Usage
 1. File structure
 Run the following two commands in the same root folder.
