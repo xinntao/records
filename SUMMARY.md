@@ -12,3 +12,6 @@
   * [Latex安装](工具软件使用/Latex安装.md)
   * [gitbook使用](工具软件使用/gitbook使用.md)
   * [Ubuntu安装MATLAB](工具软件使用/Ubuntu安装MATLAB.md)
+
+* [流程规范与经验](流程规范与经验/README.md)
+  * [01-概述与三个基本观念](流程规范与经验/01-概述与三个基本观念.md)
