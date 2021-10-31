@@ -77,7 +77,7 @@
             ]
         },
         "editlink": {
-            "base": "https://gitee.com/xinntao/records/blob/master/",
+            "base": "https://github.com/xinntao/records/blob/master/",
             "label": "Edit This Page"
         },
         "flexible-alerts": {
