@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-prism-themes": "^0.0.2",
+    "gitbook-plugin-todo": "^0.1.3",
+    "todo": "^1.1.0"
+  }
+}
