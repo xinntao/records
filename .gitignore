@@ -1,4 +1,5 @@
 _book
 node_modules
+*.md
 
 package-lock.json
